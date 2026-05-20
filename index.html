@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>كوفينا | Cofina - وجهتك الفريدة لعشاق القهوة</title>
+    <!-- ربط ملف التنسيق الخارجي CSS -->
+    <link rel="stylesheet" href="marwan/index.css" />
+  </head>
+  <body>
+    <!-- حاوية التنبيهات المنبثقة (تظهر أعلى اليمين عند الضغط على أضف للعربة) -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- شريط التنقل العلوي (Header) -->
+    <header>
+      <div class="nav-container">
+        <a href="#" class="logo">كوفينا</a>
+        <ul class="nav-menu">
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#about">قصتنا</a></li>
+          <li><a href="#menu">المنيو</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- واجهة الموقع الرئيسية (Hero Section) -->
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>مرحباً بكم في كوفينا</h1>
+        <p>
+          حيث نختار أجود حبات البن بعناية، لنصنع لك كوباً دافئاً يضبط مزاج يومك
+          ويمنحك السكينة التي تستحقها.
+        </p>
+        <a href="#menu" class="btn">استكشف القائمة الكاملة</a>
+      </div>
+    </div>
+
+    <!-- قسم عن كوفينا (About Section) -->
+    <section id="about">
+      <h2 class="section-title">عن كوفينا</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            في <strong>كوفينا</strong>، نؤمن أن القهوة ليست مجرد مشروب سريع، بل
+            هي رفيق الصباح، وملهمة الأفكار، وجسر يجمع الأحبة.
+          </p>
+          <p>
+            تأسس مقهانا ليكون ملاذاً هادئاً ومريحاً للعين والروح. نحن نستورد
+            حبوب البن من مزارع مستدامة حول العالم، ونقوم بتحميصها وتوليفها بخبرة
+            وشغف عاليين لضمان كوب مثالي في كل مرة تزورنا فيها.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600"
+            alt="تحضير القهوة في كوفينا"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المنيو والمنتجات الـ 22 (Menu Section) -->
+    <section id="menu">
+      <h2 class="section-title">منيو كوفينا المتميز</h2>
+
+      <!-- أزرار تصفية المنتجات حسب الفئة -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">كل المنيو</button>
+        <button class="filter-btn" data-category="hot">مشروبات ساخنة</button>
+        <button class="filter-btn" data-category="cold">مشروبات باردة</button>
+        <button class="filter-btn" data-category="sweet">
+          الحلويات والمخبوزات
+        </button>
+      </div>
+
+      <!-- شبكة عرض المنتجات الـ 22 -->
+      <div class="products-grid" id="productsContainer">
+        <!-- سيتم إنشاء كروت المنتجات هنا تلقائياً بواسطة الجافا سكريبت بالأسفل -->
+      </div>
+    </section>
+
+    <!-- قسم التواصل والبيانات الشخصية (Contact Section) -->
+    <section id="contact">
+      <h2 class="section-title">تواصل معنا</h2>
+      <div class="contact-container">
+        <!-- نموذج مراسلة سريع لشكل شيك -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>الاسم الكريم</label>
+            <input type="text" required placeholder="مثال: محمد يامن" />
+          </div>
+          <div class="form-group">
+            <label>البريد الإلكتروني / الهاتف</label>
+            <input type="text" required placeholder="كيف يمكننا الرد عليك؟" />
+          </div>
+          <div class="form-group">
+            <label>رسالتك</label>
+            <textarea
+              rows="4"
+              required
+              placeholder="اكتب استفسارك أو طلبك هنا..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn" style="width: 100%">
+            إرسال الرسالة
+          </button>
+        </form>
+
+        <!-- بياناتك الشخصية الحقيقية المطلوبة -->
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>📍 العنوان</h3>
+            <p>جمهورية مصر العربية، الإسكندرية</p>
+          </div>
+          <div class="info-card">
+            <h3>📞 رقم الهاتف والتواصل</h3>
+            <p><a href="tel:01044789925">01044789925</a></p>
+          </div>
+          <div class="info-card">
+            <h3>📧 البريد الإلكتروني</h3>
+            <p>
+              <a href="mailto:abuyaamen2003@gmail.com"
+                >abuyaamen2003@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- تذييل الصفحة (Footer) -->
+    <footer>
+      <p>
+        جميع الحقوق محفوظة &copy; 2026 كوفينا (Cofina) | الإسكندرية، مصر | تواصل
+        معنا: 01044789925
+      </p>
+    </footer>
+
+    <!-- ==================== كود الجافا سكريبت (JS) مدمج ومكتوب بالكامل هنا ==================== -->
+    <script>
+      // مصفوفة تحتوي على 22 منتجاً مختلفاً بصور حقيقية ومباشرة
+      const products = [
+        // فئة المشروبات الساخنة (9 منتجات مختلفة)
+        {
+          title: "إسبريسو كلاسيك سينجل",
+          cat: "hot",
+          price: "25 EGP",
+          desc: "جرعة مركزة نقية من حبوب البن المطحونة طازجاً.",
+          img: "https://images.unsplash.com/photo-1510707577719-eaae8648a25d?w=400&q=80",
+        },
+        {
+          title: "أمريكانو كوفينا الدافئ",
+          cat: "hot",
+          price: "35 EGP",
+          desc: "إسبريسو غني مخفف بالماء الساخن لعشاق النكهة الممتدة.",
+          img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80",
+        },
+        {
+          title: "كابتشينو برغوة حريرية",
+          cat: "hot",
+          price: "45 EGP",
+          desc: "توازن مثالي بين الإسبريسو، الحليب المبخر ورغوة كثيفة.",
+          img: "https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&q=80",
+        },
+        {
+          title: "فلات وايت مخملي ناعم",
+          cat: "hot",
+          price: "48 EGP",
+          desc: "دبل شوت إسبريسو مع حليب مبخر بقوام كريمي فاخر.",
+          img: "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?w=400&q=80",
+        },
+        {
+          title: "كافيه لاتيه كلاسيك",
+          cat: "hot",
+          price: "45 EGP",
+          desc: "إسبريسو غني ممزوج بكمية وافرة من الحليب الساخن.",
+          img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&q=80",
+        },
+        {
+          title: "سبانيش لاتيه دافئ",
+          cat: "hot",
+          price: "55 EGP",
+          desc: "مزيل رائع للتوتر، لاتيه محلى بالحليب المكثف الفاخر.",
+          img: "https://images.unsplash.com/photo-1594133945441-df07198f7936?w=400&q=80",
+        },
+        {
+          title: "موكا الشوكولاتة الداكنة",
+          cat: "hot",
+          price: "50 EGP",
+          desc: "إسبريسو ممزوج بصوص الشوكولاتة الفاخرة والحليب الساخن.",
+          img: "https://images.unsplash.com/photo-1607687325211-4a55955d1a1d?w=400&q=80",
+        },
+        {
+          title: "قهوة تركي بالوش السميك",
+          cat: "hot",
+          price: "30 EGP",
+          desc: "قهوة تركية تقليدية محضرة بعناية فائقة وضبط ممتاز للوش.",
+          img: "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&q=80",
+        },
+        {
+          title: "قهوة فرنسية بالبندق",
+          cat: "hot",
+          price: "40 EGP",
+          desc: "قهوة ناعمة ممزوجة بلمسة الحليب ونكهة البندق الساحرة.",
+          img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80",
+        },
+
+        // فئة المشروبات الباردة (8 منتجات مختلفة)
+        {
+          title: "آيس سبانيش لاتيه منعش",
+          cat: "cold",
+          price: "60 EGP",
+          desc: "قهوة باردة ومثلجة محلاة بلطف لتجديد نشاطك.",
+          img: "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400&q=80",
+        },
+        {
+          title: "آيس لاتيه كلاسيك مثلج",
+          cat: "cold",
+          price: "50 EGP",
+          desc: "إسبريسو يصب فوق مكعبات الثلج النقي والحليب البارد.",
+          img: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=400&q=80",
+        },
+        {
+          title: "آيس كراميل ماكياتو شيك",
+          cat: "cold",
+          price: "58 EGP",
+          desc: "طبقات الحليب والثلج مع شلال من صوص الكراميل اللذيذ.",
+          img: "https://images.unsplash.com/photo-1485808191679-5f63bb347581?w=400&q=80",
+        },
+        {
+          title: "فرابوتشينو كوفينا الخاص",
+          cat: "cold",
+          price: "65 EGP",
+          desc: "مخفوق قهوة مثلج كريمي مغطى بجبل من الكريمة المخفوقة.",
+          img: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80",
+        },
+        {
+          title: "سيروب كولد برو نقي",
+          cat: "cold",
+          price: "55 EGP",
+          desc: "قهوة مقطرة ببطء على البارد لمدة 16 ساعة لنكهة غنية خفيفة الحموضة.",
+          img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80",
+        },
+        {
+          title: "آيس موكا بالكريمة",
+          cat: "cold",
+          price: "55 EGP",
+          desc: "مزيج الشوكولاتة والإسبريسو البارد والمغطى بلمسة كاكاو.",
+          img: "https://images.unsplash.com/photo-1624594476022-b2586ebc0c82?w=400&q=80",
+        },
+        {
+          title: "ميلك شيك فانيليا غني",
+          cat: "cold",
+          price: "50 EGP",
+          desc: "آيس كريم فانيليا طبيعي مخفوق مع حليب بارد ممتاز.",
+          img: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80",
+        },
+        {
+          title: "آيس وايت موكا ساحر",
+          cat: "cold",
+          price: "60 EGP",
+          desc: "إسبريسو بارد مع الشوكولاتة البيضاء والحليب والثلج الكريمي.",
+          img: "https://images.unsplash.com/photo-1530373255104-cd18efea1618?w=400&q=80",
+        },
+
+        // فئة الحلويات والمخبوزات (5 منتجات مختلفة)
+        {
+          title: "كيكة الشوكولاتة الذائبة",
+          cat: "sweet",
+          price: "45 EGP",
+          desc: "كعكة دافئة ينفجر منها صوص الشوكولاتة الساخنة (Molten).",
+          img: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&q=80",
+        },
+        {
+          title: "تشيز كيك الفراولة الكريمي",
+          cat: "sweet",
+          price: "50 EGP",
+          desc: "تشيز كيك نيويورك الكلاسيكي بقطع ومربى الفراولة الطازجة.",
+          img: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=400&q=80",
+        },
+        {
+          title: "كرواسون فرنسي بالزبدة",
+          cat: "sweet",
+          price: "25 EGP",
+          desc: "كرواسون ذهبي مقرمش وهش ومخبوز طازجاً بخلطة الزبدة.",
+          img: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80",
+        },
+        {
+          title: "مولتن كيك صوص الكراميل",
+          cat: "sweet",
+          price: "48 EGP",
+          desc: "كيك مخبوز بحشوة الكراميل الدافئة السائلة من الداخل.",
+          img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=400&q=80",
+        },
+        {
+          title: "كوكيز كلاسيك بقطع الشوكولاتة",
+          cat: "sweet",
+          price: "20 EGP",
+          desc: "قطع كوكيز مقرمشة وطرية من المنتصف محشوة بقطع الشوكولاتة.",
+          img: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&q=80",
+        },
+      ];
+
+      // دالة إنشاء وعرض كروت المنتجات في شبكة العرض
+      function displayProducts(items) {
+        const container = document.getElementById("productsContainer");
+        container.innerHTML = ""; // تنظيف المكون أولاً
+
+        items.forEach((item) => {
+          const card = document.createElement("div");
+          card.className = "product-card";
+          card.innerHTML = `
+                    <div class="product-img" style="background-image: url('${item.img}')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">${item.title}</h3>
+                        <p class="product-desc">${item.desc}</p>
+                        <div class="product-price">${item.price}</div>
+                        <!-- زرار أضف إلى العربة وتمرير اسم المنتج للدالة التفاعلية -->
+                        <button class="btn-add-to-cart" onclick="triggerToast('${item.title}')">أضف إلى العربة</button>
+                    </div>
+                `;
+          container.appendChild(card);
+        });
+      }
+
+      // دالة إظهار الإشعار المنبثق (Toast) في أعلى اليمين بشكل شيك وثابت
+      function triggerToast(productName) {
+        const container = document.getElementById("toast-container");
+
+        // بناء عنصر الإشعار
+        const toast = document.createElement("div");
+        toast.className = "toast";
+        toast.innerText = `${productName} تم إضافته بنجاح! ☕`;
+
+        // إضافة التنبيه داخل الحاوية في الصفحة
+        container.appendChild(toast);
+
+        // حذف الإشعار تلقائياً بعد 3 ثوانٍ فور انتهاء الحركة الانسيابية له
+        setTimeout(() => {
+          toast.remove();
+        }, 3000);
+      }
+
+      // دالة تصفية وفرز المنيو بحسب الفئة المحددة عند الضغط على الأزرار
+      function setupMenuFilter() {
+        const buttons = document.querySelectorAll(".filter-btn");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", (e) => {
+            // إلغاء الوضع النشط من كل الأزرار ووضعه على الزر الحالي
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            e.target.classList.add("active");
+
+            const selectedCategory = e.target.getAttribute("data-category");
+
+            if (selectedCategory === "all") {
+              displayProducts(products); // عرض الكل
+            } else {
+              const filteredList = products.filter(
+                (p) => p.cat === selectedCategory,
+              );
+              displayProducts(filteredList); // عرض الفئة المحددة فقط
+            }
+          });
+        });
+      }
+
+      // تشغيل كل الوظائف فور تحميل الصفحة والتأكد من جاهزيتها
+      window.addEventListener("DOMContentLoaded", () => {
+        displayProducts(products); // عرض الـ 22 منتجاً كاملين فوراً
+        setupMenuFilter(); // تفعيل أزرار الفلترة والتنقل
+      });
+
+      // تشغيل تأثير تفاعلي عند إرسال فورم التواصل
+      document.getElementById("contactForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        triggerToast(
+          "شكرًا لتواصلك يا فنان! تم استلام رسالتك وسيرد فريق كوفينا عليك فوراً",
+        );
+        e.target.reset();
+      });
+    </script>
+  </body>
+</html>
